@@ -1,0 +1,80 @@
+<!-- <link rel="stylesheet" href="contact.css"> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+    <link rel="stylesheet" href="contact.css"/>
+</head>
+
+
+      
+            
+<div class="topnav" id="myTopnav">
+    <a href="index.html" >Home</a>
+    <a href="about.html">About</a>
+    <a href="project.html">Project</a>
+    <a href="contact.html">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+        
+     
+             <body>
+    <div class = "frame">
+<div id = "button_open_envelope">
+           MailBox
+        </div>
+        <div class = "message">
+            <form method="post" >
+                <!-- action="contact.php" -->
+                <input type="text" name="name" id="Name" placeholder=" Name* " required>
+        
+                <input type="email" name="email" id="email" placeholder=" Email* " required pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$">
+            
+                <input type="text" name="phone" id="phone" placeholder=" Phone (optional)" autofocus> 
+            
+                <textarea name="message" id="msg" placeholder=" Message* " required></textarea>
+        
+                <input type="text" name="address" id="address" style="display: none;">
+                <input type="submit" value="Send" id="send">
+            </form>
+        </div>
+        <div class = "bottom"></div>			
+        <div class = "left"></div>
+        <div class = "right"></div>
+        <div class = "top"></div>
+    </div>
+    <div class="icons">
+        <a class="fa fa-facebook" style="font-size:50px;" href="https://www.facebook.com/VivekJoshiOfficial"></a>
+        <!-- <i class="fa fa-facebook" style="font-size:50px;" href="https://www.facebook.com/VivekJoshiOfficial"></i> -->
+        <a class="fa fa-instagram" style="font-size:50px;"href="https://www.instagram.com/i_m_vivekjoshi"></a>
+        <a class="fa fa-envelope" style="font-size:50px;" href="https://mail.google.com/mail/u/0/?tab=wm#inbox"></a>
+        <a class="fa fa-youtube" style="font-size:50px;" href="https://www.youtube.com/channel/UCFW-hQ2GxNbN47gTbTeEt-Q?view_as=subscriber"></a>
+        <a class="fa fa-phone" style="font-size:50px;" href=""></a>
+        <a class="fa fa-twitter" style="font-size:50px;" href="https://twitter.com/VivekJoshi6896"></a>
+        <a class="fa fa-linkedin" style="font-size:50px;" href="https://www.linkedin.com/in/vivek-joshi-08a230142"></a>
+      </div><footer>Designed by vivek joshi</footer>
+</body>
+
+<script>$(document).ready(function(){
+	$('.frame').click(function(){
+		$('.top').addClass('open');
+		$('.message').addClass('pull');
+	})
+});</script>
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+
